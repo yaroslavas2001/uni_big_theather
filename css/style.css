@@ -31,7 +31,13 @@ body{
   flex: 1 1 auto;
 }
 .header{
-  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .2s linear;
+  z-index: 999;
+ 
   height: 100px;
 }
 .header__item{
@@ -40,10 +46,16 @@ body{
 .header__item:last-child{
   margin-right: 0;
   margin-left:104px;
+  border-bottom: 2px solid #D1A954;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
 }
 .header__list{
   display: flex;
  justify-content: center;
+ padding-top: 51px;
+ flex-wrap: wrap;
 }
 .header__link{
   font-family: Open Sans Condensed;
@@ -54,4 +66,94 @@ body{
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #fff;
+}
+.intro{
+  background: url(../img/fon.jpg);
+  height: 1045px;
+ display: flex;
+}
+.intro__contacts{
+  width: 150px;
+  height: 100%;
+  background-color: rgba(0, 0,0, .2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.intro__contact{
+  transform: rotate(-90deg);
+  font-family: Open Sans Condensed;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #C4C4C4;
+width: 250px;
+height: 25px;
+margin-bottom: 160px;
+}
+.intro__icon{
+margin-bottom: 30px;
+}
+.intro__icon:last-child{
+  margin-bottom: 60px;
+}
+.intro__line{
+  width: 3px;
+  height: 80px;
+  background-color: #C4C4C4;
+ 
+  margin-bottom: 40px;
+}
+.intro__row{
+  display: flex;
+}
+.intro__info{
+  display: flex;
+  flex-direction: column;
+  margin: 384px 0px 0px 255px;
+  max-width: 540px;
+}
+.intro__title{
+  font-family: Open Sans Condensed;
+font-style: normal;
+  font-weight: bold;
+font-size: 64px;
+line-height: 87px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #fff;
+margin-bottom: 50px;
+}
+.intro__text{
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+color: #fff;
+margin-bottom: 50px;
+}
+.intro__btn{
+  width: 180px;
+  height: 50px;
+  background-color: #D1A954;
+}
+.intro__btn a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  font-family: Open Sans Condensed;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #FFFFFF;
 }
