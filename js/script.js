@@ -36,3 +36,8 @@
   };
   scrollTo();
 }());
+
+$('.single-item').slick({
+prevArrow: $('.prev'),
+nextArrow: $('.next'),
+});

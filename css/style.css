@@ -67,6 +67,11 @@ body{
   text-transform: uppercase;
   color: #fff;
 }
+.header__link:focus,
+.header__link:hover,
+.header__link:active{
+  opacity: .9;
+}
 .intro{
   background: url(../img/fon.jpg);
   height: 1045px;
@@ -142,6 +147,11 @@ margin-bottom: 50px;
   height: 50px;
   background-color: #D1A954;
 }
+.intro__btn:hover,
+.intro__btn:active,
+.intro__btn:focus{
+  opacity: 0.9;
+}
 .intro__btn a{
   display: flex;
   justify-content: center;
@@ -156,4 +166,19 @@ line-height: 25px;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 color: #FFFFFF;
+}
+.slider{
+  display: flex;
+  flex-direction: column;
+  margin-top: 267px;
+  margin-left: 125px;
+}
+.single-item{
+  height:510px;
+  width: 370px;
+}
+.arrow{
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
 }
